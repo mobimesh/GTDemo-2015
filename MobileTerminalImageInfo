@@ -1,0 +1,32 @@
+You can find the pre-configured, android OS image and all required files in the link below:
+https://drive.google.com/file/d/0BzxW5PNJ3rUpaEEwWUtlT29rUFU/view
+
+The steps you should follow to load the image are:
+
+1. Download android sdk (https://developer.android.com/sdk/index.html#download)
+2. Start SDK Manager
+3. Download and install "Extras/Google USB Driver"
+4. Put recovery.img in {android_sdk_path}/sdk/platform-tools
+5. Boot Nexus 5
+6. Activate developer menu by tapping 7 times on "About phone/ Build number"
+7. In the developer menu activate android debugging
+8. Connect the phone
+9. In device manager find the google usb driver and set Nexus 5 as "Android Composite ADB Interface"
+9. Start a terminal in {android_sdk_path}/sdk/platform-tools
+10. Run "adb reboot-bootloader" and wait for the phone to boot
+11. Run "fastboot oem unlock" and follow the instructions
+12. Boot the phone normally and run step 10 again
+13. Run "fastboot flash recovery recovery.img"
+14. Boot into normal mode once again by selecting "Start" using the volume buttons and then clicking the power button
+
+15.Transfer the backup to the device
+a)Run adb push {path_of_backup} /data/media/clockworkmod/backup/{name_of_backup}
+b)transfer to /mnt/sdcard/temp/ if you run into permission problems and then transfer the backup to the correct location using a file manager on the phone
+c)the files can also be tranfered by a program such as airdroid and then moved to the correct location
+
+16. Run "adb reboot-recovery"
+17. Select "Backup and Restore" and restore
+
+For any questions / issues if there are any email me at the BCG Demo list
+
+Aristotelis Margaris UPRC
