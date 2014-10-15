@@ -27,7 +27,7 @@ a)Run adb push {path_of_backup} /data/media/clockworkmod/backup/{name_of_backup}
 b)transfer to /mnt/sdcard/temp/ if you run into permission problems and then transfer the backup to the correct location using a file manager on the phone
 c)the files can also be tranfered by a program such as airdroid and then moved to the correct location
 
-19. Run "adb reboot-recovery"
+19. Run "adb reboot recovery"
 20. Select "Backup and Restore" and restore
 
 For any questions / issues if there are any email me at the BCG Demo list
