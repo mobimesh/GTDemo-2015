@@ -18,16 +18,17 @@ The steps you should follow to load the image are:
 12. Boot the phone normally and run step 10 again
 13. Activate developer menu by tapping 7 times on "About phone/ Build number"
 14. In the developer menu activate android debugging
-15. Run "fastboot flash recovery recovery.img"
-16. Boot into normal mode once again by selecting "Start" using the volume buttons and then clicking the power button
+15. Run "adb reboot-bootloader" and wait for the phone to boot
+16. Run "fastboot flash recovery recovery.img"
+17. Boot into normal mode once again by selecting "Start" using the volume buttons and then clicking the power button
 
-17.Transfer the backup to the device
+18.Transfer the backup to the device
 a)Run adb push {path_of_backup} /data/media/clockworkmod/backup/{name_of_backup}
 b)transfer to /mnt/sdcard/temp/ if you run into permission problems and then transfer the backup to the correct location using a file manager on the phone
 c)the files can also be tranfered by a program such as airdroid and then moved to the correct location
 
-18. Run "adb reboot-recovery"
-19. Select "Backup and Restore" and restore
+19. Run "adb reboot-recovery"
+20. Select "Backup and Restore" and restore
 
 For any questions / issues if there are any email me at the BCG Demo list
 
