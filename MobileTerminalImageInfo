@@ -4,7 +4,7 @@ https://drive.google.com/file/d/0BzxW5PNJ3rUpaEEwWUtlT29rUFU/view
 The steps you should follow to load the image are:
 
 1. Download android sdk (https://developer.android.com/sdk/index.html#download)
-2. Start SDK Manager (with Linux: cd adt-bundle-linux-x86_64-20140702/tools ; ./android sdk)
+2. Start SDK Manager (with Linux: cd {android_sdk_path}/tools ; ./android sdk)
 3. Download and install "Extras/Google USB Driver" (Not compatible with Linux)
 4. Put recovery.img in {android_sdk_path}/sdk/platform-tools
 5. Boot Nexus 5
